@@ -60,7 +60,7 @@ function block_ips {
             iptables -F abuse-defender
         fi
 
-        IP_LIST=$(curl -s 'https://raw.githubusercontent.com/Kiya6955/Abuse-Defender/main/abuse-ips.ipv4')
+        IP_LIST=$(curl -s 'https://raw.githubusercontent.com/dev-ir/Abuse-Defender/main/abuse-ips.ipv4')
 
         if [ $? -ne 0 ]; then
             echo "Failed to fetch the IP-Ranges list. Please contact @Kiya6955"
